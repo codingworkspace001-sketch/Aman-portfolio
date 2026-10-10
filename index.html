@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aman Srivastava</title>
+  <meta name="description" content="Portfolio of Aman Srivastava, an aspiring full-stack developer and Computer Science Engineering student.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232B44F0'/><text x='32' y='44' font-size='34' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'>A</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Slowly drifting colour glows behind the page -->
+  <div class="orbs" aria-hidden="true"><span></span><span></span></div>
+
+  <!-- Colour sheet that sweeps across the screen when you change tabs -->
+  <div class="curtain" aria-hidden="true"></div>
+
+  <div class="shell">
+
+    <!-- ================= SIDEBAR / NAV ================= -->
+    <header class="side">
+      <a class="brand" href="#home">Aman Srivastava</a>
+
+      <nav class="nav" aria-label="Main">
+        <a href="#home" data-tab="home">Home</a>
+        <a href="#personal" data-tab="personal">Personal info</a>
+        <a href="#projects" data-tab="projects">Projects</a>
+        <a href="#resume" data-tab="resume">Resume</a>
+      </nav>
+
+      <ul class="social">
+        <!-- EDIT: replace YOUR-GITHUB-USERNAME and YOUR-LINKEDIN-ID with your real profile names -->
+        <li><a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:amansri3011@gmail.com">Email</a></li>
+      </ul>
+    </header>
+
+    <main class="stage">
+
+      <!-- ================= HOME ================= -->
+      <section class="panel" id="home" tabindex="-1" aria-label="Home" hidden>
+        <div class="hero">
+          <h1 class="hero-name">
+            <span class="mask"><span>Aman</span></span>
+            <span class="mask"><span>Srivastava.</span></span>
+          </h1>
+          <div class="hero-row">
+            <div class="hero-text">
+              <p class="typed-line" data-rise>I build <span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+              <p class="hero-role" data-rise>Computer Science Engineering student looking for an internship or an entry-level role.</p>
+              <div class="hero-actions" data-rise>
+                <a class="btn btn-solid" href="#projects">See my projects</a>
+                <a class="btn btn-line" href="#resume">Read my resume</a>
+              </div>
+            </div>
+
+            <div class="float" data-rise aria-hidden="true">
+              <div class="bob">
+                <div class="code-card" id="tilt">
+                  <div class="code-bar"><i></i><i></i><i></i><span>aman.js</span></div>
+                  <pre class="code" id="code"></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills ticker (from your resume). Edit the words in both lists. -->
+          <div class="ticker" data-rise aria-label="Skills">
+            <div class="ticker-track">
+              <ul>
+                <li>C</li><li>Python</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
+                <li>Flask</li><li>SQL</li><li>MySQL</li><li>Git</li><li>GitHub</li>
+              </ul>
+              <ul aria-hidden="true">
+                <li>C</li><li>Python</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
+                <li>Flask</li><li>SQL</li><li>MySQL</li><li>Git</li><li>GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PERSONAL INFO ================= -->
+      <section class="panel" id="personal" tabindex="-1" aria-label="Personal info" hidden>
+        <h2 class="page-title" data-rise>Personal info</h2>
+
+        <div class="split">
+          <div class="prose" data-rise>
+            <p>
+              I'm a Computer Science Engineering student at RV Institute of Technology and Management
+              with a CGPA of 7.8, and I'm interested in full-stack development.
+            </p>
+            <p>
+              I work with C, Python, HTML, CSS, JavaScript, SQL, MySQL and Flask. My projects so far include
+              a Gym Management System, an Offline-First Learning App and this portfolio website.
+              I'm looking for internship and entry-level opportunities where I can apply what I know and keep learning.
+            </p>
+          </div>
+
+          <dl class="facts" data-rise>
+            <div><dt>Based in</dt><dd>Bengaluru, India</dd></div>
+            <div><dt>University</dt><dd>RV Institute of Technology and Management</dd></div>
+            <div><dt>Course</dt><dd>B.E. Computer Science Engineering (expected 2028)</dd></div>
+            <!-- EDIT: write your school name -->
+            <div><dt>School</dt><dd>[Your school name]</dd></div>
+            <div><dt>Achievement</dt><dd>Marathon winner</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:amansri3011@gmail.com">amansri3011@gmail.com</a></dd></div>
+            <div><dt>Phone</dt><dd><a href="tel:+916362757699">+91 63627 57699</a></dd></div>
+          </dl>
+        </div>
+
+        <h3 class="section-title" data-rise>What I work with</h3>
+        <dl class="facts skills" data-rise>
+          <div><dt>Programming</dt><dd>C, Python, JavaScript</dd></div>
+          <div><dt>Web</dt><dd>HTML, CSS, Flask</dd></div>
+          <div><dt>Database</dt><dd>SQL, MySQL</dd></div>
+          <div><dt>Tools</dt><dd>Git, GitHub</dd></div>
+        </dl>
+
+        <h3 class="section-title" data-rise>Sports</h3>
+        <!-- EDIT: change the text in brackets. Use plain numbers for Played and Won (for example 25 and 11);
+             the win rate is worked out automatically from them. -->
+        <dl class="facts" id="sports" data-rise>
+          <div><dt>Favourite sport</dt><dd>[Your favourite sport]</dd></div>
+          <div><dt>Played</dt><dd id="played">[number]</dd></div>
+          <div><dt>Won</dt><dd id="won">[number]</dd></div>
+          <div id="winrate-row" hidden><dt>Win rate</dt><dd id="winrate"></dd></div>
+          <div><dt>Highlight</dt><dd>Marathon winner</dd></div>
+        </dl>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+      <section class="panel" id="projects" tabindex="-1" aria-label="Projects" hidden>
+        <h2 class="page-title" data-rise>Projects</h2>
+
+        <div class="projects" data-rise>
+
+          <!-- EDIT: replace the Code links with your real repository links -->
+          <article class="project">
+            <div class="project-main">
+              <h3>Gym Management System</h3>
+              <p>A web-based database project for running a gym: it keeps member and gym records in one place.</p>
+            </div>
+            <p class="project-stack">Flask, MySQL, SQLAlchemy, HTML, CSS, Bootstrap</p>
+            <p class="project-links">
+              <a href="https://github.com/YOUR-GITHUB-USERNAME/gym-management-system" target="_blank" rel="noopener">Code</a>
+            </p>
+          </article>
+
+          <article class="project">
+            <div class="project-main">
+              <h3>Offline-First Learning App</h3>
+              <p>A learning app concept for places with poor internet. Content works offline and syncs when the connection returns.</p>
+            </div>
+            <p class="project-stack">Offline access, data sync</p>
+            <p class="project-links">
+              <a href="https://github.com/YOUR-GITHUB-USERNAME/offline-learning-app" target="_blank" rel="noopener">Code</a>
+            </p>
+          </article>
+
+          <article class="project">
+            <div class="project-main">
+              <h3>Personal Portfolio Website</h3>
+              <p>This site. A responsive page that shows my profile, skills, projects and contact links.</p>
+            </div>
+            <p class="project-stack">HTML, CSS, JavaScript</p>
+            <p class="project-links">
+              <a href="https://github.com/YOUR-GITHUB-USERNAME/YOUR-GITHUB-USERNAME.github.io" target="_blank" rel="noopener">Code</a>
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ================= RESUME ================= -->
+      <section class="panel" id="resume" tabindex="-1" aria-label="Resume" hidden>
+        <div class="title-row" data-rise>
+          <h2 class="page-title">Resume</h2>
+          <a class="btn btn-solid" href="resume.pdf" download="Aman_Srivastava_Resume.pdf">Download PDF</a>
+        </div>
+
+        <h3 class="section-title" data-rise>Summary</h3>
+        <p class="prose" data-rise>
+          Computer Science Engineering student with a CGPA of 7.8 and an interest in full-stack development.
+          Familiar with C, Python, HTML, CSS, JavaScript, SQL, MySQL and Flask. Seeking internship and
+          entry-level opportunities to apply technical skills and continue learning.
+        </p>
+
+        <h3 class="section-title" data-rise>Education</h3>
+        <ol class="timeline" data-rise>
+          <li>
+            <p class="when">Expected 2028</p>
+            <div>
+              <h4>Computer Science Engineering, RV Institute of Technology and Management</h4>
+              <p>CGPA: 7.8</p>
+            </div>
+          </li>
+          <li>
+            <p class="when">[Years]</p>
+            <div>
+              <!-- EDIT: school name, board and years -->
+              <h4>[Your school name]</h4>
+              <p>[Board / stream, for example Class 12 – Science]</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="section-title" data-rise>Experience</h3>
+        <ol class="timeline" data-rise>
+          <li>
+            <p class="when">Now</p>
+            <div>
+              <h4>Fresher</h4>
+              <p>No formal work experience yet. Looking for internship and full-time opportunities.</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="section-title" data-rise>Technical skills</h3>
+        <dl class="facts skills" data-rise>
+          <div><dt>Programming</dt><dd>C, Python, JavaScript</dd></div>
+          <div><dt>Web</dt><dd>HTML, CSS, Flask</dd></div>
+          <div><dt>Database</dt><dd>SQL, MySQL</dd></div>
+          <div><dt>Tools</dt><dd>Git, GitHub</dd></div>
+        </dl>
+
+        <h3 class="section-title" data-rise>Achievement</h3>
+        <ol class="timeline" data-rise>
+          <li>
+            <p class="when">Sports</p>
+            <div>
+              <h4>Marathon winner</h4>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
